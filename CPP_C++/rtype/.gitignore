@@ -1,0 +1,5 @@
+r-type_*
+*.dylib
+*.pdb
+*.dll
+*.so

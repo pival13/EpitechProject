@@ -1,0 +1,5 @@
+Gomoku
+.vscode
+*.o
+*.obj
+pbrain-*

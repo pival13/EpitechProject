@@ -1,0 +1,7 @@
+def fibonacci (x : int) : int
+    if x < 2 then
+        x
+    else
+        fibonacci (x-1) + fibonacci (x-2);
+
+fibonacci (20);

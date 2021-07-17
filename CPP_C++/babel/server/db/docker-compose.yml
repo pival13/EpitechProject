@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+    db:
+        image: mysql
+        restart: on-failure
+        environment:
+            MYSQL_USER: server
+            MYSQL_PASSWORD: password
+            MYSQL_DATABASE: my_db
+            MYSQL_ROOT_PASSWORD: toor
+        ports:
+            - 6603:3306
+        volumes:
+            - server-data:/var/lib/mysql
+            - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+    phpmyadmin:
+        image: phpmyadmin
+        restart: on-failure
+        ports:
+            - 8080:80
+        environment:
+            PMA_ARBITRARY: 1
+            PMA_HOST: db
+            PMA_PORT: 3306
+        depends_on:
+            - db
+
+volumes:
+    server-data:

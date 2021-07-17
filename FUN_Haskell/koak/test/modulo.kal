@@ -1,0 +1,9 @@
+def bonjour (x : int) : int
+    v = 5:
+    v + 1;
+
+def modulo(x y)
+    q = x / y:
+    r = x - q * y;
+
+modulo(-8, 5) + bonjour(8);

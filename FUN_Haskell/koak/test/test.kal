@@ -1,0 +1,7 @@
+def test ( x )
+    x - 1;
+
+y = 2:
+(while y < 10 do
+    y = y * 2):
+test( y + 3);

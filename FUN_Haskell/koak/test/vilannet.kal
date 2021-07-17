@@ -1,0 +1,14 @@
+def bonjour (x : int) : int
+    v = 5:
+    v + 1;
+
+def modulo(x y)
+    q = x / y:
+    r = x - q * y;
+
+def vilannet(y : int o : int) : int
+    (while modulo(y + o, 2) == 0 do
+        y = y + 1):
+    y;
+
+vilannet(-8, 5);

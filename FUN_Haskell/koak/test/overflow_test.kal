@@ -1,0 +1,7 @@
+def balai() : int
+    if 1 == 2 then
+        3
+    else
+        balai();
+
+balai();

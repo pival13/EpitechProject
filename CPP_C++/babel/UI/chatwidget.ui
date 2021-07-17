@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatWidget</class>
+ <widget class="QMainWindow" name="ChatWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(28, 28, 28);
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QListWidget::item:selected {
+	background: none;
+	color: none;
+}
+
+QListWidget::item:hover {
+	background: none;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>344</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QTextEdit" name="AddFriendText">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>61</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Search Friend</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: silver;
+selection-color: none;
+
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 2px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Helvetica'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AddFriendButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>81</width>
+          <height>61</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>81</width>
+          <height>61</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Gadugi</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Add Friend</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: silver;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 4px;
+}
+
+QPushButton:pressed{
+padding: 2px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DeleteFriend">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>81</width>
+          <height>61</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>81</width>
+          <height>61</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Gadugi</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Delete Friend</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: silver;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 4px;
+}
+
+QPushButton:pressed{
+padding: 2px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="UsersStatus">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Gadugi</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: silver;</string>
+      </property>
+      <property name="text">
+       <string>UserStatus</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Gadugi</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: silver;</string>
+          </property>
+          <property name="text">
+           <string>Contact</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="Users">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Friend(s)</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: silver;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 2px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Gadugi</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: silver;</string>
+            </property>
+            <property name="text">
+             <string>Name</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="Dialog_2">
+            <property name="toolTip">
+             <string>Messages</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(23, 23, 23)</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Panel</enum>
+            </property>
+            <property name="resizeMode">
+             <enum>QListView::Adjust</enum>
+            </property>
+            <property name="batchSize">
+             <number>100</number>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="CallButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>81</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>81</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Gadugi</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Call Friend</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color: silver;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 4px;
+}
+
+QPushButton:pressed{
+padding: 2px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Call</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="MessageLine">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>556</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Helvetica</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>Compose Message</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: silver;
+selection-color: none;
+
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 2px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Panel</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Helvetica'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="SendButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>81</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>81</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Gadugi</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Send Message</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color: silver;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(52, 52, 52);
+padding: 4px;
+}
+
+QPushButton:pressed{
+padding: 2px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Send</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gadugi</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:silver;</string>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="font">
+     <font>
+      <family>Gadugi</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:silver;</string>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuChange_Status">
+     <property name="title">
+      <string>Change Status</string>
+     </property>
+     <addaction name="actionOnline"/>
+     <addaction name="separator"/>
+     <addaction name="actionDo_Not_Disturb"/>
+     <addaction name="separator"/>
+     <addaction name="actionOffline"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="actionStyle"/>
+    <addaction name="separator"/>
+    <addaction name="menuChange_Status"/>
+    <addaction name="separator"/>
+    <addaction name="actionDisconnect_2"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout_Us">
+    <property name="title">
+     <string>About Us</string>
+    </property>
+    <widget class="QMenu" name="menuAdrien_HEROS">
+     <property name="title">
+      <string>Adrien HEROS</string>
+     </property>
+     <widget class="QMenu" name="menuDeveloper_Server_Trello">
+      <property name="title">
+       <string>Developer Server / Trello</string>
+      </property>
+      <widget class="QMenu" name="menuLike_Pim_s">
+       <property name="title">
+        <string>Like Pim's</string>
+       </property>
+       <addaction name="actionMain_power"/>
+      </widget>
+      <addaction name="menuLike_Pim_s"/>
+      <addaction name="actionDev_at_5_O_Clock"/>
+      <addaction name="actionSleep_when_hungry"/>
+     </widget>
+     <addaction name="menuDeveloper_Server_Trello"/>
+    </widget>
+    <widget class="QMenu" name="menuQuentin_FELIX">
+     <property name="title">
+      <string>Quentin FELIX</string>
+     </property>
+     <widget class="QMenu" name="menuDeveloper_Client">
+      <property name="title">
+       <string>Developer Client</string>
+      </property>
+      <widget class="QMenu" name="menuIs_a_satanist">
+       <property name="title">
+        <string>Is a satanist</string>
+       </property>
+       <addaction name="actionis_slandering_on_the_development_capabilities_of_front_end_developers"/>
+      </widget>
+      <widget class="QMenu" name="menuA_C_H_D">
+       <property name="title">
+        <string>A.C.H.D.</string>
+       </property>
+       <addaction name="actionAlways_Close_His_Door"/>
+      </widget>
+      <addaction name="menuIs_a_satanist"/>
+      <addaction name="menuA_C_H_D"/>
+      <addaction name="actionLike_Pim_s_2"/>
+     </widget>
+     <addaction name="menuDeveloper_Client"/>
+    </widget>
+    <widget class="QMenu" name="menuAlain_GRANDAME">
+     <property name="title">
+      <string>Alain GRANDAME</string>
+     </property>
+     <widget class="QMenu" name="menuDeveloper_Front_End_UI">
+      <property name="title">
+       <string>Developer Front-End / UI</string>
+      </property>
+      <widget class="QMenu" name="menuCarpet_Sales">
+       <property name="title">
+        <string>Carpet Sales</string>
+       </property>
+       <widget class="QMenu" name="menuHello_There">
+        <property name="title">
+         <string>Hello There !!</string>
+        </property>
+        <addaction name="actionObi_Wan_Kenobi"/>
+       </widget>
+       <addaction name="menuHello_There"/>
+      </widget>
+      <addaction name="actionUI_development"/>
+      <addaction name="actionUX_development"/>
+      <addaction name="menuCarpet_Sales"/>
+      <addaction name="actionPopUp_s_development"/>
+     </widget>
+     <addaction name="menuDeveloper_Front_End_UI"/>
+    </widget>
+    <widget class="QMenu" name="menuValentin_L_HOMEL">
+     <property name="title">
+      <string>Valentin L'HOMEL</string>
+     </property>
+     <widget class="QMenu" name="menuDeveloper_and_Linker">
+      <property name="title">
+       <string>Developer and Linker</string>
+      </property>
+      <widget class="QMenu" name="menuALL">
+       <property name="title">
+        <string>ALL</string>
+       </property>
+       <addaction name="actionis_slandering_on_the_development_capabilities_of_front_end_developers_2"/>
+      </widget>
+      <addaction name="actionDev_Back"/>
+      <addaction name="actionSQL"/>
+      <addaction name="menuALL"/>
+     </widget>
+     <addaction name="menuDeveloper_and_Linker"/>
+    </widget>
+    <widget class="QMenu" name="menuWelcom_On_BABYLABUX">
+     <property name="title">
+      <string>Welcom On BABYLABUX</string>
+     </property>
+     <addaction name="actionCorrect_by_Guillaume_Devoille"/>
+    </widget>
+    <addaction name="menuWelcom_On_BABYLABUX"/>
+    <addaction name="separator"/>
+    <addaction name="menuAdrien_HEROS"/>
+    <addaction name="separator"/>
+    <addaction name="menuValentin_L_HOMEL"/>
+    <addaction name="separator"/>
+    <addaction name="menuQuentin_FELIX"/>
+    <addaction name="separator"/>
+    <addaction name="menuAlain_GRANDAME"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuAbout_Us"/>
+  </widget>
+  <action name="actionTheme">
+   <property name="text">
+    <string>Theme</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionSelect_color">
+   <property name="text">
+    <string>Select color</string>
+   </property>
+  </action>
+  <action name="actionStyle">
+   <property name="text">
+    <string>Style</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gadugi</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionDisconnect_2">
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+  </action>
+  <action name="actionOnline">
+   <property name="text">
+    <string>Online</string>
+   </property>
+  </action>
+  <action name="actionDo_Not_Disturb">
+   <property name="text">
+    <string>Do not disturb</string>
+   </property>
+  </action>
+  <action name="actionOffline">
+   <property name="text">
+    <string>Offline</string>
+   </property>
+  </action>
+  <action name="actionUI_development">
+   <property name="text">
+    <string>UI development</string>
+   </property>
+  </action>
+  <action name="actionUX_development">
+   <property name="text">
+    <string>UX development</string>
+   </property>
+  </action>
+  <action name="action666">
+   <property name="text">
+    <string>666</string>
+   </property>
+  </action>
+  <action name="actionDev_at_5_O_Clock">
+   <property name="text">
+    <string>Dev at 5 O'Clock</string>
+   </property>
+  </action>
+  <action name="actionSleep_when_hungry">
+   <property name="text">
+    <string>Sleep when hungry</string>
+   </property>
+  </action>
+  <action name="actionAlways_Close_His_Door">
+   <property name="text">
+    <string>Always Close His Door</string>
+   </property>
+  </action>
+  <action name="actionDev_Back">
+   <property name="text">
+    <string>Dev Back</string>
+   </property>
+  </action>
+  <action name="actionSQL">
+   <property name="text">
+    <string>SQL</string>
+   </property>
+  </action>
+  <action name="actionPopUp_s_development">
+   <property name="text">
+    <string>PopUp's development</string>
+   </property>
+  </action>
+  <action name="actionLike_Pim_s_2">
+   <property name="text">
+    <string>Like Pim's</string>
+   </property>
+  </action>
+  <action name="actionMain_power">
+   <property name="text">
+    <string>Main power</string>
+   </property>
+  </action>
+  <action name="actionObi_Wan_Kenobi">
+   <property name="text">
+    <string>Obi-Wan Kenobi !!!</string>
+   </property>
+  </action>
+  <action name="actionis_slandering_on_the_development_capabilities_of_front_end_developers">
+   <property name="text">
+    <string>Is slandering on the development capabilities of front-end developers</string>
+   </property>
+  </action>
+  <action name="actionis_slandering_on_the_development_capabilities_of_front_end_developers_2">
+   <property name="text">
+    <string>Is slandering on the development capabilities of front-end developers</string>
+   </property>
+  </action>
+  <action name="actionCorrect_by_Guillaume_Devoille">
+   <property name="text">
+    <string>Correct by Guillaume Devoille</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

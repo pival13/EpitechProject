@@ -1,0 +1,63 @@
+name:                koak
+version:             1.0
+github:              "pival13/EpitechProject/FUN_Haskell/koak"
+license:             BSD3
+author:              "pival13, bardomania, Kevin Pruvost & Baptiste Martinet"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/pival13/EpitechProject/FUN_Haskell/koak#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- llvm-hs
+- llvm-hs-pure
+- containers
+- bytestring
+- directory
+- process
+- unix
+- mtl
+
+library:
+  source-dirs: src
+
+executables:
+  koak:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - koak
+
+  koakc:
+    main:                Main.hs
+    source-dirs:         compiler
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - koak
+
+tests:
+  koak-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - koak

@@ -1,0 +1,6 @@
+def factorial (x)
+    v = 1:
+    (for i = 0, i < x, 1 in
+        v = v * (i + 1));
+
+factorial (9) - factorial(8);
