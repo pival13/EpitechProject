@@ -1,0 +1,16 @@
+
+
+# Sprites/Background.png 0 0 50 50 1 ## 8 8
+% Sprites/Background.png 99 99 1 1 1 ## 1 1
+. Sprites/Background.png 50 0 50 50 1  . 7 0
+* Sprites/Background.png 0 50 50 50 1  o 7 0
+  Sprites/Background.png 50 50 25 25 1    7 0
+@ Sprites/pacman.png 0 0 16 16 4 () 3 0
+a Sprites/blinky.png 0 0 16 16 2 {} 1 0
+b Sprites/blinky.png 0 16 16 16 2 {} 6 0
+c Sprites/blinky.png 0 32 16 16 2 {} 3 0
+d Sprites/blinky.png 0 48 16 16 2 {} 5 0
+A Sprites/blinky.png 0 64 16 16 2 {} 4 0
+B Sprites/blinky.png 0 64 16 16 2 {} 4 0
+C Sprites/blinky.png 0 64 16 16 2 {} 4 0
+D Sprites/blinky.png 0 64 16 16 2 {} 4 0

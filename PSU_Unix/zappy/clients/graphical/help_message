@@ -1,0 +1,5 @@
+USAGE: ./zappy_graphical -p port -h machine
+       ./zappy_graphical -D (default values contained in zappySettings.json)
+
+        port    is the port number
+        machine is the name of the machine; localhost by default

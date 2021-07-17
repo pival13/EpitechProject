@@ -1,0 +1,98 @@
+{
+    "defaultFrequence": 100,
+    "timePerFood": 126,
+    "initialFood": 10,
+    "maxCommand": 10,
+    "elevationPath": [
+        {
+            "player": 1,
+            "linemate": 1
+        },
+        {
+            "player": 2,
+            "linemate": 1,
+            "deraumere": 1,
+            "sibur": 1
+        },
+        {
+            "player": 2,
+            "linemate": 2,
+            "sibur": 1,
+            "phiras": 2
+        },
+        {
+            "player": 4,
+            "linemate": 1,
+            "deraumere": 1,
+            "sibur": 2,
+            "phiras": 1
+        },
+        {
+            "player": 4,
+            "linemate": 1,
+            "deraumere": 2,
+            "sibur": 1,
+            "mendiane": 3
+        },
+        {
+            "player": 6,
+            "linemate": 1,
+            "deraumere": 2,
+            "sibur": 3,
+            "phiras": 1
+        },
+        {
+            "player": 6,
+            "linemate": 2,
+            "deraumere": 2,
+            "sibur": 2,
+            "mendiane": 2,
+            "phiras": 2,
+            "thystame": 1
+        }
+    ],
+    "commandTime": {
+        "Forward": 7,
+        "Right": 7,
+        "Left": 7,
+
+        "Look": 7,
+        "Inventory": 1,
+        "Broadcast @@@": 7,
+
+        "Connect_nbr": 0,
+        "Fork": 42,
+        "Eject": 7,
+
+        "Take @@@": 7,
+        "Set @@@": 7,
+        "Incantation": 300,
+
+        "Egg hatching": 600
+    },
+    "appearanceRate": {
+        "food": 1,
+        "linemate": 1,
+        "deraumere": 1,
+        "sibur": 1,
+        "mendiane": 1,
+        "phiras": 1,
+        "thystame": 1
+    },
+    "serverDefaultValues": {
+        "ip": "localhost",
+        "port": 4242,
+        "width": 10,
+        "height": 10,
+        "name": [
+            "Team1",
+            "Team2"
+        ],
+        "playersByTeam": 5
+    },
+    "graphicalSettings": {
+        "mouseWheelSensitivity": 0.8,
+        "invertXAxis": false,
+        "invertYAxis": false
+    }
+}

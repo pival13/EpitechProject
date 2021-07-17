@@ -1,0 +1,40 @@
+# Admiral Business Machines 1954-2042
+# D - Latch
+
+.chipsets:
+clock		clock
+input		data
+input		strobe
+input		output_enable
+
+output		o1
+output		o2
+output		o3
+output		o4
+output		o5
+output		o6
+output		o7
+output		o8
+output		os
+output		os2
+
+4094		shift
+
+.links:
+clock:1		    shift:3
+data:1		    shift:2
+strobe:1		shift:1
+output_enable:1	shift:15
+
+o1:1		    shift:4
+o2:1		    shift:5
+o3:1		    shift:6
+o4:1		    shift:7
+o5:1		    shift:14
+o6:1		    shift:13
+o7:1		    shift:12
+o8:1		    shift:11
+os:1		    shift:9
+os2:1		    shift:10
+
+#undef

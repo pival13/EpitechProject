@@ -1,0 +1,3 @@
+# CPP_Pool_rush1
+
+Create in collaboration with [kevinpruvost](https://github.com/kevinpruvost), [juliettead](https://github.com/hadrienm) and [bardomania](https://github.com/bardomania).

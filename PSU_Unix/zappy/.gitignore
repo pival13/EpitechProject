@@ -1,0 +1,7 @@
+test
+*.so
+*.a
+html
+latex
+index.html
+*.html

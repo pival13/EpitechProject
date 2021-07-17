@@ -1,0 +1,18 @@
+
+
+# Sprites/Tetriminos.png 0 48 44 45 1 ## 7 7
+% Sprites/Tetriminos.png 10 0 1 1 1 ## 1 1
+i Sprites/Tetriminos.png 72 0 24 24 1 ## 6 6
+I Sprites/Tetriminos.png 72 0 24 24 1 ## 6 6
+o Sprites/Tetriminos.png 24 0 24 24 1 ## 3 3
+O Sprites/Tetriminos.png 24 0 24 24 1 ## 3 3
+t Sprites/Tetriminos.png 24 24 24 24 1 ## 5 5
+T Sprites/Tetriminos.png 24 24 24 24 1 ## 5 5
+l Sprites/Tetriminos.png 48 24 24 24 1 ## 8 8
+L Sprites/Tetriminos.png 48 24 24 24 1 ## 8 8
+j Sprites/Tetriminos.png 0 24 24 24 1 ## 4 4
+J Sprites/Tetriminos.png 0 24 24 24 1 ## 4 4
+z Sprites/Tetriminos.png 0 0 24 24 1 ## 1 1
+Z Sprites/Tetriminos.png 0 0 24 24 1 ## 1 1
+s Sprites/Tetriminos.png 48 0 24 24 1 ## 2 2
+S Sprites/Tetriminos.png 48 0 24 24 1 ## 2 2

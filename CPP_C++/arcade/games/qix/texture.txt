@@ -1,0 +1,39 @@
+
+
+a Sprites/Font Pixels 01.png 1 1 100 100 1  a 1 0
+b Sprites/Font Pixels 01.png 1 1 100 100 1  b 1 0
+c Sprites/Font Pixels 01.png 1 1 100 100 1  c 1 0
+d Sprites/Font Pixels 01.png 1 1 100 100 1  d 1 0
+e Sprites/Font Pixels 01.png 1 1 100 100 1  e 1 0
+f Sprites/Font Pixels 01.png 1 1 100 100 1  f 1 0
+g Sprites/Font Pixels 01.png 1 1 100 100 1  g 1 0
+h Sprites/Font Pixels 01.png 1 1 100 100 1  h 1 0
+i Sprites/Font Pixels 01.png 1 1 100 100 1  i 1 0
+j Sprites/Font Pixels 01.png 1 1 100 100 1  j 1 0
+k Sprites/Font Pixels 01.png 1 1 100 100 1  k 1 0
+l Sprites/Font Pixels 01.png 1 1 100 100 1  l 1 0
+m Sprites/Font Pixels 01.png 1 1 100 100 1  m 1 0
+n Sprites/Font Pixels 01.png 1 1 100 100 1  n 1 0
+o Sprites/Font Pixels 01.png 1 1 100 100 1  o 1 0
+p Sprites/Font Pixels 01.png 1 1 100 100 1  p 1 0
+q Sprites/Font Pixels 01.png 1 1 100 100 1  q 1 0
+r Sprites/Font Pixels 01.png 1 1 100 100 1  r 1 0
+s Sprites/Font Pixels 01.png 1 1 100 100 1  s 1 0
+t Sprites/Font Pixels 01.png 1 1 100 100 1  t 1 0
+u Sprites/Font Pixels 01.png 1 1 100 100 1  u 1 0
+v Sprites/Font Pixels 01.png 1 1 100 100 1  v 1 0
+w Sprites/Font Pixels 01.png 1 1 100 100 1  w 1 0
+x Sprites/Font Pixels 01.png 1 1 100 100 1  x 1 0
+y Sprites/Font Pixels 01.png 1 1 100 100 1  y 1 0
+z Sprites/Font Pixels 01.png 1 1 100 100 1  z 1 0
+# Sprites/Texture.png 50 0 50 50 1 ## 8 8
+% Sprites/Texture.png 49 99 1 1 1 ## 1 1
+@ Sprites/Texture.png 50 50 25 25 1 O  4 0
+$ Sprites/Texture.png 75 50 25 25 1 O  4 0
+\ Sprites/Texture.png 75 75 25 25 1 \  4 0
+& Sprites/Texture.png 50 75 25 25 1 *  4 0
+| Sprites/Texture.png 0 50 25 25 1 .  2 0
+- Sprites/Texture.png 0 50 25 25 1 .  2 0
+^ Sprites/Texture.png 25 50 25 25 1 .  3 0
+* Sprites/Texture.png 0 75 25 25 1 .  1 0
+  Sprites/Texture.png 0 0 50 50 1    0 0
