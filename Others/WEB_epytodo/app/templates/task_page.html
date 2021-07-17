@@ -1,0 +1,29 @@
+{% extends "test2.html" %}
+
+{% block content %}
+<h1>{{user['name']}}'s tasks</h1>
+<table>
+{% for task in tasks %}
+<tr>
+    <td><h3 style="margin-left: 30px"><a href="/user/task/{{task[0]}}">{{task[1]}}</a></h2></td>
+</tr>
+{% endfor %}
+<!--<tr>
+    <td><form><input style="margin-left: 20px" list="status" placeholder="Other task" size="10">
+        <datalist id="status">
+            {% for task in no_tasks %}<option value="{{task[1]}}">{% endfor %}
+        </datalist></td>
+    <td><button>Add task</button></form></td>
+</tr>-->
+<tr>
+    <td><form action="/user/task/add" method="GET"><button>Create task</button></form></td>
+</tr>
+</table>
+<br>
+<table>
+    <tr>
+        <td><form action="/"><button>Home</button></form></td>
+        <td><form action="/user/"><button>Profil</button></form></td>
+    </tr>
+</table>
+{% endblock %}

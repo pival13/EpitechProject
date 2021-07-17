@@ -1,0 +1,109 @@
+data/main_menu/bgd_main_menu2.png
+data/main_menu/button_play.png
+data/main_menu/button_settings.png
+data/main_menu/button_quit.png
+data/main_menu/button_load_save.png
+data/main_menu/button_create_save.png
+data/main_menu/button_delete_save.png
+data/main_menu/button_return.png
+data/main_menu/music_icon.png
+data/main_menu/sound_fx_icon.png
+data/main_menu/bars.png
+data/others/swamp.png
+data/demon/Demon F.png
+data/demon/Texture_mage_f.png
+data/demon/Texture_invoc_f.png
+data/demon/Demon H.png
+data/demon/Texture_mage_h.png
+data/demon/Texture_invoc_h.png
+data/dwarf/Nain F.png
+data/dwarf/Texture_hache_f.png
+data/dwarf/Nain H.png
+data/dwarf/Texture_hache_h.png
+data/elf/Elfe F.png
+data/elf/Texture_arc_f.png
+data/elf/Texture_magie_f.png
+data/elf/Elfe H.png
+data/elf/Texture_arc_h.png
+data/elf/Texture_magie_h.png
+data/human/Humain F.png
+data/human/Texture_arc_f.png
+data/human/Texture_lance_f.png
+data/human/Texture_dague_f.png
+data/human/Humain H.png
+data/human/Texture_arc_h.png
+data/human/Texture_lance_h.png
+data/human/Texture_dague_h.png
+data/ogre/Ogre F.png
+data/ogre/Texture_ogre_f.png
+data/ogre/Ogre H.png
+data/ogre/Texture_ogre_h.png
+data/main_menu/title.png
+data/foes/carte.png
+data/foes/Chocobo.png
+data/foes/dio.png
+data/foes/ET.png
+data/foes/freezer.png
+data/foes/ghost.png
+data/foes/Goron.png
+data/foes/img1.png
+data/foes/mario.png
+data/foes/mousse.png
+data/foes/murloc.png
+data/foes/piafabec.png
+data/foes/pong.png
+data/foes/poulpe.png
+data/foes/rayman.png
+data/foes/sanglier.png
+data/foes/shaggy.png
+data/foes/super_mutant.png
+data/foes/tetris.png
+data/background/City.png
+data/background/Demon.png
+data/background/Forest.png
+data/background/Holy_forest.png
+data/background/Mountain.png
+data/background/Plain.png
+data/background/Temple.png
+data/background/Swamp.png
+data/in_game_menu/panel.png
+data/in_game_menu/button_characters.png
+data/in_game_menu/button_quests.png
+data/in_game_menu/button_save.png
+data/in_game_menu/button_settings.png
+data/in_game_menu/button_quit.png
+data/in_game_menu/message_save.png
+data/ch_quests_menu/button_up.png
+data/ch_quests_menu/button_left.png
+data/ch_quests_menu/button_right.png
+data/ch_quests_menu/button_down.png
+data/ch_quests_menu/quests_title.png
+data/ch_quests_menu/characters_title.png
+data/ch_quests_menu/bgd_characters.png
+data/ch_quests_menu/bgd_quests.png
+data/ch_quests_menu/return_button.png
+data/others/chara.png
+data/create_save/panel_cs.png
+data/foes/base.png
+data/main_menu/deleted.png
+data/main_menu/no_save.png
+data/create_save/created.png
+data/intro/arrow.png
+data/intro/choice.png
+data/intro/dialogue_box.png
+data/intro/narrator.png
+data/intro/night.png
+data/in_game_menu/gdemon.png
+data/in_game_menu/gdwarf.png
+data/in_game_menu/gelf.png
+data/in_game_menu/ghuman.png
+data/in_game_menu/gogre.png
+data/main_menu/nomana.png
+data/main_menu/fuite.png
+data/others/city.png
+data/others/demon.png
+data/others/mountain.png
+data/others/forest.png
+data/in_game_menu/nomoney.png
+data/in_game_menu/bought.png
+

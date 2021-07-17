@@ -1,0 +1,6 @@
+	.name "test"
+	.comment "test"
+
+ok:
+	ld %0, r8
+	zjmp %:ok

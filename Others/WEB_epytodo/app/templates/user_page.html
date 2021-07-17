@@ -1,0 +1,15 @@
+{% extends "test2.html" %}
+
+{% block content %}
+    <h1>{{user['name']}}</h1>
+    <div><b>name</b> = {{user['name']}},<br>
+        <b>id</b> = {{user['id']}}
+    </div>
+<br>
+<table>
+    <tr>
+        <td><form action="/"><button>Home</button></form></td>
+        <td><form action="/user/task/"><button>All tasks</button></form></td>
+    </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "test2.html" %}
+
+{% block content %}
+<form action="/user/task/add" method="POST">
+    <table>
+        <tr>
+            <td><b>Title</b>:</td>
+            <td><input type="text" placeholder="My task" name="title" required></td>
+        </tr><tr>
+            <td><b>Start</b>:</td>
+            <td><input type="date" name="begin"></td>
+        </tr><tr>
+            <td><b>End</b>:</td>
+            <td><input type="date" name="end"></td>
+        </tr><tr>
+            <td><b>Status</b>:</td>
+            <td><input list="status" placeholder="not started" name="status"><datalist id="status"><option value="not started"><option value="in progress"><option value="done"></option></datalist></td>
+        </tr>
+    </table>
+    <button>Create</button>
+</form>
+<br>
+<table>
+    <tr>
+        <td><form action="/"><button>Home</button></form></td>
+        <td><form action="/user/"><button>Profil</button></form></td>
+        <td><form action="/user/task/"><button>All tasks</button></form></td>
+    </tr>
+</table>
+{% endblock %}

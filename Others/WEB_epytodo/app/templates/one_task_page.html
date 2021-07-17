@@ -1,0 +1,48 @@
+{% extends "test2.html" %}
+
+{% block content %}
+<h1>{{task[1]}}</h1>
+<form action="/user/task/{{task[0]}}" method="POST" id="edit">
+    <table>
+        <tr>
+            <td><b>Title</b>:</td>
+            <td><input type="text" value="{{task[1]}}" name="title"></td>
+        </tr><tr>
+            <td><b>Start</b>:</td>
+            <td><input type="date" value={{task[2]}} name="begin"></td>
+        </tr><tr>
+            <td><b>End</b>:</td>
+            <td><input type="date" value={{task[3]}} name="end"></td>
+        </tr><tr>
+            <td><b>Status</b>:</td>
+            <td><input list="status" placeholder="{{task[4]}}" name="status"><datalist id="status"><option value="not started"><option value="in progress"><option value="done"></option></datalist></td>
+        </tr><tr>
+        </form>
+            <td><b>Users</b>:</td>
+            <td><table>
+                {% for use in users %}
+                <tr>
+                    <td>{{use}}</td>
+                    <td><button formaction="/user/task/{{task[0]}}/del_user/{{use}}" formmethod="POST">X</button></td>
+                </tr>
+                {%endfor%}
+                <tr><form action="/user/task/{{task[0]}}/add_user/" method="POST" id="user">
+                        <td><input type="text" name="new_user" placeholder="New user" size="10" required></td>
+                        <td><button form="user">Add</button></td>
+                </form></tr>
+            </table>
+        </tr>
+        <tr>
+            <td><button form="edit">Edit</button></td>
+            <td><form action="/user/task/del/{{task[0]}}" method="POST"><button>Delete</button></form></td>
+        </tr>
+    </table>
+<br>
+<table>
+    <tr>
+        <td><form action="/"><button>Home</button></form></td>
+        <td><form action="/user/"><button>Profil</button></form></td>
+        <td><form action="/user/task/"><button>All tasks</button></form></td>
+    </tr>
+</table>
+{% endblock %}

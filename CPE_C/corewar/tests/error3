@@ -1,0 +1,5 @@
+	.name "Tyron"
+	.comment "Just a basic pompes, traction program"
+
+	st r1 9
+	livem %1

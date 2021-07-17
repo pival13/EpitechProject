@@ -1,0 +1,14 @@
+{% extends "test2.html" %}
+{% block content %}
+    {% if user['id'] != -1 %}
+    <h1>Hello {{user['name']}}</h1>
+    <table>
+        <tr>
+            <td><form action="/user/"><button>Profil</button></form></td>
+            <td><form action="/user/task/"><button>All tasks</button></form></td>
+        </tr>
+    </table>
+    {% endif %}
+    <br>
+    <img src="/static/do.png" alt="We can be do what we want to do!">
+{% endblock %}

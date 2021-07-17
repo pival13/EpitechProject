@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Epytodo</title>
+    <link rel="stylesheet" href='/static/style.css' /> <!-- '/' == WEB_epydod_2018/app/ -->
+</head>
+<body>
+    <div>
+        <h1 style="position: absolute; z-index:1">Index</h1>
+        <img src="/static/do.png" alt="We can be do what we want to do!">
+    </div>
+    <div>
+        {% set list = [
+            ('/user', '/register', 'Register'),
+            ('/user', '/signin', 'Log in'),
+            ] -%}
+        <nav>
+            <ul>
+            {% for link, li, page in list %}
+                <li><a href={{link}}>{{page}}</a></li>
+            {%endfor%}
+            </ul>
+        </nav>
+        <form action="/signin" method="POST">
+            <p>Login:</p>
+            <input type = "text" name="name" placeholder="login">
+            <input type = "submit" value="Connect">
+        </form>
+        {% block test %}This is a test{%endblock%}
+    </div>
+    <div>{% block test2 %}This is a test{%endblock%}</div>
+</body>
+</html>

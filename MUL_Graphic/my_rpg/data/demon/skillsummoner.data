@@ -1,0 +1,8 @@
+Magic Arrow
+Draws a magic arrow which uses the lowest def or res of the enemy.
+
+Resurrection
+Resurrects a dead ally with half of its life.
+
+Leech
+Steals life of an enemy at regular times.
